@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<item
+    android:id="@+id/menu_change"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_group_work_black_24dp"
+    android:title="@string/menu_change"/>
+
+<item
+    android:id="@+id/menu_share"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_share_black_24dp"
+    android:title="@string/menu_share"/>
+<item
+    android:id="@+id/menu_discard"
+    app:showAsAction="always"
+    android:icon="@drawable/ic_delete_black_24dp"
+    android:title="@string/menu_discard"/>
+
+
+
+</menu>

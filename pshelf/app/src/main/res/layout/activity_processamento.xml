@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusableInTouchMode="false"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCaminhoDir"
+        android:editable="false"
+        android:textSize="12sp"
+        android:enabled="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnEscolhaDir"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@drawable/shape"
+        android:layout_alignTop="@+id/btnEscolhaDir"
+        android:height="5dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:layout_alignBottom="@+id/btnEscolhaDir"
+        style="@style/AppTheme" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolher"
+        android:typeface="normal"
+        android:textSize="15sp"
+        android:background="@drawable/shape2"
+        android:id="@+id/btnEscolhaDir"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Processar"
+        android:typeface="normal"
+        android:background="@drawable/shape"
+        android:textSize="15sp"
+        android:id="@+id/btnProcessar"
+        android:layout_alignTop="@+id/btnRemoverDeteccoes"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnEscolhaDir"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar base"
+        android:typeface="normal"
+        android:background="@drawable/shape"
+        android:textSize="15sp"
+        android:id="@+id/btnRemoverDeteccoes"
+        android:layout_below="@+id/txtCaminhoDir"
+        android:layout_alignEnd="@+id/btnEscolhaDir"
+        android:layout_toEndOf="@+id/txtCaminhoDir" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Arquivos classificados:"
+        android:id="@+id/lblLinha1"
+        android:layout_below="@+id/btnProcessar"
+        android:layout_alignParentStart="true"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Arquivos classificados:"
+        android:typeface="normal"
+        android:textSize="18sp"
+        android:id="@+id/lblArquivosClassificados"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/lblLinha1"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tamanho da base:"
+        android:typeface="normal"
+        android:textSize="18sp"
+        android:id="@+id/lblTamanhoBase"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignBottom="@+id/lblLinha1"
+        android:layout_alignStart="@+id/lblArquivosClassificados" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView5"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/lblArquivosClassificados" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Escolha de pasta para processamento:"
+        android:typeface="normal"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_toEndOf="@+id/textView9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tamanho total dos arquivos:"
+        android:typeface="normal"
+        android:textSize="18sp"
+        android:id="@+id/lblTamTotal"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView7"
+        android:visibility="invisible"
+        android:layout_below="@+id/lblTamTotal"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView8"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView9"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView4"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignTop="@+id/lblTamTotal"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="E"
+        android:id="@+id/textView6"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
